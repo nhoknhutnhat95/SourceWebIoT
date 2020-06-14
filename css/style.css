@@ -14,7 +14,7 @@ div {
 }
 
 body {
-    background-image: url('SourceWebIoT/Image/login-bg.jpg');
+    background-image: url('Image/login-bg.jpg');
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -33,7 +33,7 @@ img {
     width: 500px;
     margin: 0 auto;
     padding: 40px;
-    background-image: url('SourceWebIoT/Image/bg-white-lock.png');
+    background-image: url('Image/bg-white-lock.png');
     margin-top: 30px;
 }
 
