@@ -14,7 +14,7 @@ div {
 }
 
 body {
-    background-image: url('./Image/login-bg.jpg');
+    background-image: url('Image/login-bg.jpg');
     background-repeat: no-repeat;
     background-size: cover;
 }
