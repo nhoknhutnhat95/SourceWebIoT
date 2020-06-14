@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>HỌC JAVASCRIPTS</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="logo mr-6">
+        <a href="#">
+            <img src="Image/gpp-login.png">
+        </a>
+    </div>
+    <div class="main-content">
+        <div class="text-center">
+            <h2 class="title">ĐĂNG NHẬP</h2>
+        </div>
+        <form class="needs-validation" novalidate>
+            <div class="form-group">
+                <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Tên đăng nhập hoặc mật khẩu" name="name" required>
+                <small id="emailHelp" class="form-text text-muted">Chúng tôi sẽ không bao giờ chia sẻ email của bạn với
+                    bất cứ ai khác.</small>
+                <div class="invalid-feedback">
+                    Tên đăng nhập không được để trống.
+                </div>
+            </div>
+            <div class="form-group">
+                <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Mật khẩu" name="password" required>
+                <div class="invalid-feedback">
+                    Mật khẩu không được để trống.
+                </div>
+            </div>
+            <div class="form-group form-check">
+                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                <label class="form-check-label" for="exampleCheck1">Ghi nhớ</label>
+            </div>
+            <div class="row text-center">
+                <div class="col-sm-12">
+                    <button type="submit" id="btnLogin" class="btn btn-outline-danger btn-lg">Đăng nhập</button>
+                </div>
+            </div>
+        </form>
+        <script>
+            // Example starter JavaScript for disabling form submissions if there are invalid fields
+            (function() {
+                'use strict';
+                window.addEventListener('load', function() {
+                    // Fetch all the forms we want to apply custom Bootstrap validation styles to
+                    var forms = document.getElementsByClassName('needs-validation');
+                    // Loop over them and prevent submission
+                    var validation = Array.prototype.filter.call(forms, function(form) {
+                        form.addEventListener('submit', function(event) {
+                            if (form.checkValidity() === false) {
+                                event.preventDefault();
+                                event.stopPropagation();
+                            }
+                            form.classList.add('was-validated');
+                        }, false);
+                    });
+                }, false);
+            })();
+            $('#btnLogin').click(function() {
+                var name = $('#exampleInputEmail1').val();
+                var pass = $('#exampleInputPassword1').val();
+                if (name == "uneti" && pass == "uneti") {
+                    window.location.href = "dashboard.html";
+                    alert("Đăng nhập thành công");
+                } else {
+                    alert("Sai tài khoản hoặc mật khẩu");
+                }
+            });
+        </script>
+    </div>
+</body>
+
+</html>
