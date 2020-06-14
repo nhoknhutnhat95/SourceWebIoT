@@ -50,20 +50,20 @@ function getStatusRoom(roomNameObject, room_name) {
     this.room_name = room_name;
     $("#room_name").text(room_name);
     if (room.den == 1) {
-        $("#imgLight").prop("src", "/assets/img/lighton.png");
+        $("#imgLight").prop("src", "assets/img/lighton.png");
         $(".statusLight").text(SystemParam.lightOn);
         $("#statusLight").prop("class", "fa fa-toggle-on");
     } else {
-        $("#imgLight").prop("src", "/assets/img/lightoff.png");
+        $("#imgLight").prop("src", "assets/img/lightoff.png");
         $(".statusLight").text(SystemParam.lightOff);
         $("#statusLight").prop("class", "fa fa-toggle-off");
     }
     if (room.quat == 1) {
-        $("#imgFan").prop("src", "/assets/img/fop.png");
+        $("#imgFan").prop("src", "assets/img/fop.png");
         $(".statusFan").text(SystemParam.fanOn);
         $("#statusFan").prop("class", "fa fa-toggle-on");
     } else {
-        $("#imgFan").prop("src", "/assets/img/fo.png");
+        $("#imgFan").prop("src", "assets/img/fo.png");
         $(".statusFan").text(SystemParam.fanOff);
         $("#statusFan").prop("class", "fa fa-toggle-off");
     }
@@ -121,12 +121,12 @@ function setClickFan(roomNameObject) {
     this.room = roomNameObject;
     if (room.quat == 0) {
         room.quat = 1;
-        $("#imgFan").prop("src", "/assets/img/fop.png");
+        $("#imgFan").prop("src", "assets/img/fop.png");
         $(".statusFan").text(SystemParam.fanOn);
         $("#statusFan").prop("class", "fa fa-toggle-on");
     } else {
         room.quat = 0;
-        $("#imgFan").prop("src", "/assets/img/fo.png");
+        $("#imgFan").prop("src", "assets/img/fo.png");
         $(".statusFan").text(SystemParam.fanOff);
         $("#statusFan").prop("class", "fa fa-toggle-off");
     }
@@ -136,12 +136,12 @@ function setClickLight(roomNameObject) {
     this.room = roomNameObject;
     if (room.den == 0) {
         room.den = 1;
-        $("#imgLight").prop("src", "/assets/img/lighton.png");
+        $("#imgLight").prop("src", "assets/img/lighton.png");
         $(".statusLight").text(SystemParam.lightOn);
         $("#statusLight").prop("class", "fa fa-toggle-on");
     } else {
         room.den = 0;
-        $("#imgLight").prop("src", "/assets/img/lightoff.png");
+        $("#imgLight").prop("src", "assets/img/lightoff.png");
         $(".statusLight").text(SystemParam.lightOff);
         $("#statusLight").prop("class", "fa fa-toggle-off");
     }
