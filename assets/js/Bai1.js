@@ -9,14 +9,14 @@ var SystemParam = {
     phongBep: "Phòng bếp",
 };
 var firebaseConfig = {
-    apiKey: "AIzaSyC5ERexvE5GIryRC3HwXyA0a1thXKFYK8s",
-    authDomain: "datdv-e1bcb.firebaseapp.com",
-    databaseURL: "https://datdv-e1bcb.firebaseio.com",
-    projectId: "datdv-e1bcb",
-    storageBucket: "datdv-e1bcb.appspot.com",
-    messagingSenderId: "262402453336",
-    appId: "1:262402453336:web:edcfda700bfffba6953f2d",
-    measurementId: "G-0MS7L7E3N1"
+    apiKey: "AIzaSyA2mrZGTviNJepI4qcAoS8IdMftAJ_zlYU",
+    authDomain: "datn-768db.firebaseapp.com",
+    databaseURL: "https://datn-768db.firebaseio.com",
+    projectId: "datn-768db",
+    storageBucket: "datn-768db.appspot.com",
+    messagingSenderId: "416447379041",
+    appId: "1:416447379041:web:75f70db1890a4fcbd1dc20",
+    measurementId: "G-GWGJXZW2GX"
 };
 // Initialize Firebase
 firebase.initializeApp(firebaseConfig);
