@@ -12,71 +12,8 @@
 </head>
 
 <body>
-    <div class="logo mr-6">
-        <a href="#">
-            <img src="Image/gpp-login.png">
-        </a>
-    </div>
-    <div class="main-content">
-        <div class="text-center">
-            <h2 class="title">ĐĂNG NHẬP</h2>
-        </div>
-        <form class="needs-validation" novalidate>
-            <div class="form-group">
-                <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Tên đăng nhập hoặc mật khẩu" name="name" required>
-                <small id="emailHelp" class="form-text text-muted">Chúng tôi sẽ không bao giờ chia sẻ email của bạn với
-                    bất cứ ai khác.</small>
-                <div class="invalid-feedback">
-                    Tên đăng nhập không được để trống.
-                </div>
-            </div>
-            <div class="form-group">
-                <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Mật khẩu" name="password" required>
-                <div class="invalid-feedback">
-                    Mật khẩu không được để trống.
-                </div>
-            </div>
-            <div class="form-group form-check">
-                <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                <label class="form-check-label" for="exampleCheck1">Ghi nhớ</label>
-            </div>
-            <div class="row text-center">
-                <div class="col-sm-12">
-                    <button type="submit" id="btnLogin" class="btn btn-outline-danger btn-lg">Đăng nhập</button>
-                </div>
-            </div>
-        </form>
-        <script>
-            // Example starter JavaScript for disabling form submissions if there are invalid fields
-            (function() {
-                'use strict';
-                window.addEventListener('load', function() {
-                    // Fetch all the forms we want to apply custom Bootstrap validation styles to
-                    var forms = document.getElementsByClassName('needs-validation');
-                    // Loop over them and prevent submission
-                    var validation = Array.prototype.filter.call(forms, function(form) {
-                        form.addEventListener('submit', function(event) {
-                            if (form.checkValidity() === false) {
-                                event.preventDefault();
-                                event.stopPropagation();
-                            }
-                            form.classList.add('was-validated');
-                        }, false);
-                    });
-                }, false);
-            })();
-            $('#btnLogin').click(function() {
-                var name = $('#exampleInputEmail1').val();
-                var pass = $('#exampleInputPassword1').val();
-                if (name == "uneti" && pass == "uneti") {
-                    window.location.href = "dashboard.html";
-                    alert("Đăng nhập thành công");
-                } else {
-                    alert("Sai tài khoản hoặc mật khẩu");
-                }
-            });
-        </script>
-    </div>
+    
+            
 </body>
 
 </html>
